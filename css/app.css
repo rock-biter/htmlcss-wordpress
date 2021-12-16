@@ -21,3 +21,89 @@ a {
   margin: 0 auto;
 }
 
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+.row [class^="col-"]:first-child {
+  padding-left: 0;
+}
+
+.row [class^="col-"]:last-child {
+  padding-right: 0;
+}
+
+.row [class^="col-"]:only-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.module {
+  padding: 20px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  color: white;
+}
+
+
+/* DEBUG RULES */
+
+.debug header .container {
+  background-color: rgb(137, 43, 225,0.2);
+}
+
+.debug footer .container {
+  background-color: rgb(228, 147, 120,0.2);
+}
+
+.debug #jumbo .container {
+  background-color: rgba(242, 163, 95,0.2);
+  min-height: 250px;
+}
+
+.debug #main-content .container {
+  background-color: rgba(74, 74, 148,0.2);
+  /* min-height: 500px; */
+}
+
+.debug section {
+  border: 1px solid;
+  padding: 20px 10px;
+}
+
+.debug .container {
+  border: 2px dashed blue;
+  /* padding: 20px; */
+}
+
+.debug .row {
+  border: 4px double red;
+  /* padding: 20px; */
+}
+
+.debug .row [class^="col-"] {
+  border: 2px solid brown;
+  /* padding: 20px; */
+}
+
+
+
